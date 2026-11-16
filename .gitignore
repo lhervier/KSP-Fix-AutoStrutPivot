@@ -1,0 +1,4 @@
+obj/
+GameData/KSPFixAutoStrutPivot/*.dll
+GameData/*.zip
+__pycache__/

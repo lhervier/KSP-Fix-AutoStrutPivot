@@ -1,0 +1,155 @@
+ship = Piston-Heaviest
+version = 1.12.5
+description = Root piston in Heaviest autostrut: empty FL-T100 and RC-001S under its base, full FL-T200 on its rod
+type = VAB
+size = 1.25,2.5,1.25
+steamPublishedFileId = 0
+persistentId = 3911500001
+rot = 0,0,0,0
+missionFlag = Squad/Flags/default
+vesselType = Debris
+OverrideDefault = False,False,False,False
+OverrideActionControl = 0,0,0,0
+OverrideAxisControl = 0,0,0,0
+OverrideGroupNames = ,,,
+PART
+{
+	part = piston.02_4290000001
+	partName = Part
+	persistentId = 391150101
+	pos = 0,10,0
+	attPos = 0,0,0
+	attPos0 = 0,10,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Heaviest
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = fuelTankSmallFlat_4290000002
+	link = fuelTankSmall_4290000003
+	attN = bottom,fuelTankSmallFlat_4290000002_0|-0.420726|0_0|-1|0_0|-0.420726|0_0|-1|0
+	attN = top,fuelTankSmall_4290000003_0|0.643867|0_0|1|0_0|0.643867|0_0|1|0
+}
+PART
+{
+	part = fuelTankSmallFlat_4290000002
+	partName = Part
+	persistentId = 391150102
+	pos = 0,9.266774,0
+	attPos = 0,0,0
+	attPos0 = 0,-0.733226,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = probeStackSmall_4290000004
+	attN = top,piston.02_4290000001_0|0.3125|0_0|1|0_0|0.3125|0_0|1|0
+	attN = bottom,probeStackSmall_4290000004_0|-0.3125|0_0|-1|0_0|-0.3125|0_0|-1|0
+	RESOURCE
+	{
+		name = LiquidFuel
+		amount = 0
+		maxAmount = 45
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+	RESOURCE
+	{
+		name = Oxidizer
+		amount = 0
+		maxAmount = 55
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
+}
+PART
+{
+	part = fuelTankSmall_4290000003
+	partName = Part
+	persistentId = 391150103
+	pos = 0,11.199117,0
+	attPos = 0,0,0
+	attPos0 = 0,1.199117,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = bottom,piston.02_4290000001_0|-0.55525|0_0|-1|0_0|-0.55525|0_0|-1|0
+	attN = top,Null_0_0|0.55525|0_0|1|0_0|0.55525|0_0|1|0
+}
+PART
+{
+	part = probeStackSmall_4290000004
+	partName = Part
+	persistentId = 391150104
+	pos = 0,8.854274,0
+	attPos = 0,0,0
+	attPos0 = 0,-0.4125,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = top,fuelTankSmallFlat_4290000002_0|0.1|0_0|1|0_0|0.1|0_0|1|0
+	attN = bottom,Null_0_0|-0.1|0_0|-1|0_0|-0.1|0_0|-1|0
+}
