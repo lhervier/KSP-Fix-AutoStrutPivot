@@ -1,4 +1,5 @@
 using System;
+using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 
@@ -16,7 +17,9 @@ namespace com.github.lhervier.ksp.fix.autostrutpivot
         private void Start()
         {
             Settings.Load();
-            Log.Info($"Version {typeof(KSPFixAutoStrutPivot).Assembly.GetName().Version}, " +
+            string version = typeof(KSPFixAutoStrutPivot).Assembly
+                .GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+            Log.Info($"Version {version}, " +
                 $"heaviestOnOwnSide {Settings.HeaviestOnOwnSide}, log level {Log.Level}");
             if (!Settings.HeaviestOnOwnSide)
             {
