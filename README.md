@@ -121,7 +121,11 @@ extends. A long stroke asked at once makes it more likely. If the piston extends
 The display of autostruts, in the Physics screen of the debug menu, shows where the strut goes: without this mod, from
 the piston to the FL-T200, on its rod; with it, from the piston to the probe core, under its base.
 
-<!-- Image: the autostrut display, without and with this mod. -->
+| Without this mod | With this mod |
+|---|---|
+| <img src="imgs/auto-strut-display.jpg" width="400" alt="The piston on the launch pad with the autostrut display on: an orange line goes up from the piston along its rod into the FL-T200 tank on top"> | <img src="imgs/auto-strut-display-modded.jpg" width="400" alt="The same piston with this mod and the autostrut display on: the orange line now goes down from the piston into the probe core under its base"> |
+
+*Same vessel on the launch pad, before touching the piston: an autostrut the piston has torn away is still drawn.*
 
 At `Debug` (see [Settings](#settings)), `KSP.log` gets one line each time the autostrut of a robotic part would have
 crossed its pivot:
