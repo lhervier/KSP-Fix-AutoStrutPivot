@@ -3,7 +3,7 @@
     <TargetFramework>net472</TargetFramework>
     <AssemblyName>KSPFixAutoStrutPivot</AssemblyName>
     <RootNamespace>com.github.lhervier.ksp.fix.autostrutpivot</RootNamespace>
-    <Version>0.1.0</Version>
+    <Version>0.1.0-dev</Version>
     <Description>Keeps the autostrut of an unlocked robotic part from crossing the part's own pivot</Description>
     <!-- Straight into the folder that gets copied to the GameData of KSP. -->
     <OutputPath>GameData\KSPFixAutoStrutPivot</OutputPath>
